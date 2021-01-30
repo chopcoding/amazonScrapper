@@ -9,10 +9,12 @@
 
 BOT_NAME = 'amazon'
 
-SPIDER_MODULES = ['amazon.spiders']
-NEWSPIDER_MODULE = 'amazon.spiders'
+SPIDER_MODULES = ['amazonscrapper.spiders']
+NEWSPIDER_MODULE = 'amazonscrapper.spiders'
+ITEM_PIPELINES = {
+    'amazonscrapper.pipelines.AmazonPipeline': 300,
 
-
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'amazon (+http://www.yourdomain.com)'
 USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'

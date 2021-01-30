@@ -1,5 +1,5 @@
 import scrapy
-from ..items import AmazonItem
+from amazonscrapper.items import AmazonItem
 
 class AmazonSpiderSpider(scrapy.Spider):
     name = 'amazon_spider'
